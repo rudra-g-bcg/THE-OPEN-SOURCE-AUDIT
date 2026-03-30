@@ -25,16 +25,16 @@ The repository contains five shell scripts and a written project report covering
 ```
 oss-audit-[rollnumber]/
 │
-├── README.md                          ← This file
+├── README.md                        
 │
 ├── scripts/
-│   ├── script1_system_identity.sh     ← System Identity Report
-│   ├── script2_package_inspector.sh   ← FOSS Package Inspector
-│   ├── script3_disk_permission_auditor.sh  ← Disk & Permission Auditor
-│   ├── script4_log_analyzer.sh        ← Log File Analyzer
-│   └── script5_manifesto_generator.sh ← Open Source Manifesto Generator
+│   ├── script1_system_identity.sh
+│   ├── script2_package_inspector.sh
+│   ├── script3_disk_permission_auditor.sh
+│   ├── script4_log_analyzer.sh
+│   └── script5_manifesto_generator.sh
 │
-└── OSS_Audit_Git_Report.pdf           ← Project report (also submitted on portal)
+└── OSS_Audit_Git_Report.pdf
 ```
 ---
 
