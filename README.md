@@ -41,7 +41,7 @@ oss-audit-[rollnumber]/
 ## Script Descriptions
 
 ### Script 1 — System Identity Report
-**File:** `script1_system_identity.sh`
+**File:** `system_identity_report_script1.sh`
 
 Displays a formatted welcome screen showing the current Linux system's identity:
 - Linux distribution name and kernel version
@@ -54,7 +54,7 @@ Displays a formatted welcome screen showing the current Linux system's identity:
 ---
 
 ### Script 2 — FOSS Package Inspector
-**File:** `script2_package_inspector.sh`
+**File:** `FOSS_Package_Inspector_script2.sh`
 
 Checks whether the `git` package is installed on the system. Supports both RPM-based (Fedora, CentOS, RHEL) and Debian-based (Ubuntu, Debian) distributions. Displays version, licence, and summary. Uses a `case` statement to print a philosophy note about git and other well-known open-source packages.
 
@@ -63,7 +63,7 @@ Checks whether the `git` package is installed on the system. Supports both RPM-b
 ---
 
 ### Script 3 — Disk and Permission Auditor
-**File:** `script3_disk_permission_auditor.sh`
+**File:** `Disk_and_Permission_Audit_script3.sh`
 
 Loops through an array of important system directories (`/etc`, `/var/log`, `/home`, `/usr/bin`, `/tmp`, `/var`, `/opt`) and reports permissions, owner, group, and disk usage for each. Also audits Git's system-wide and user-level configuration files specifically.
 
@@ -72,7 +72,7 @@ Loops through an array of important system directories (`/etc`, `/var/log`, `/ho
 ---
 
 ### Script 4 — Log File Analyzer
-**File:** `script4_log_analyzer.sh`
+**File:** `Log_File_Analyzer_script4.sh`
 
 Reads a log file line by line and counts how many lines contain a given keyword (default: `error`, case-insensitive). Prints the last 5 matching lines. Implements a do-while style retry mechanism to try fallback log file locations if the specified file does not exist.
 
@@ -81,7 +81,7 @@ Reads a log file line by line and counts how many lines contain a given keyword 
 ---
 
 ### Script 5 — Open Source Manifesto Generator
-**File:** `script5_manifesto_generator.sh`
+**File:** `Open_Source_Manifesto_generator_script5.sh`
 
 Interactively asks the user three questions and composes a personalised open-source philosophy statement using their answers. Saves the manifesto to a `.txt` file named after the current user. Demonstrates the alias concept through a helper function pattern.
 
@@ -112,7 +112,7 @@ chmod +x scripts/*.sh
 
 **Script 1 — System Identity Report**
 ```bash
-./scripts/script1_system_identity.sh
+./scripts/system_identity_report_script1.sh
 ```
 No arguments required. Displays system information immediately.
 
@@ -120,7 +120,7 @@ No arguments required. Displays system information immediately.
 
 **Script 2 — FOSS Package Inspector**
 ```bash
-./scripts/script2_package_inspector.sh
+./scripts/FOSS_Package_Inspector_script2.sh
 ```
 No arguments required. Checks for `git` package automatically. Ensure git is installed first:
 ```bash
@@ -135,12 +135,12 @@ sudo dnf install git
 
 **Script 3 — Disk and Permission Auditor**
 ```bash
-./scripts/script3_disk_permission_auditor.sh
+./scripts/Disk_and_Permission_Audit_script3.sh
 ```
 No arguments required. Audits standard system directories and Git config locations.
 > Note: Some directories (like `/var/log`) may require sudo for size reporting:
 ```bash
-sudo ./scripts/script3_disk_permission_auditor.sh
+sudo ./scripts/Disk_and_Permission_Audit_script3.sh
 ```
 
 ---
@@ -148,13 +148,13 @@ sudo ./scripts/script3_disk_permission_auditor.sh
 **Script 4 — Log File Analyzer**
 ```bash
 # Basic usage with default keyword 'error'
-./scripts/script4_log_analyzer.sh /var/log/syslog
+./scripts/Log_File_Analyzer_script4.sh /var/log/syslog
 
 # With a custom keyword
-./scripts/script4_log_analyzer.sh /var/log/syslog WARNING
+./scripts/Log_File_Analyzer_script4.sh /var/log/syslog WARNING
 
 # On Fedora/CentOS — use messages instead
-./scripts/script4_log_analyzer.sh /var/log/messages error
+./scripts/Log_File_Analyzer_script4.sh /var/log/messages error
 ```
 > If no log file is accessible, the script will automatically try fallback locations.
 
@@ -162,7 +162,7 @@ sudo ./scripts/script3_disk_permission_auditor.sh
 
 **Script 5 — Open Source Manifesto Generator**
 ```bash
-./scripts/script5_manifesto_generator.sh
+./scripts/Open_Source_Manifesto_generator_script5.sh
 ```
 Interactive — the script will prompt you for three answers. Your manifesto is saved as `manifesto_[yourusername].txt` in the current directory.
 
