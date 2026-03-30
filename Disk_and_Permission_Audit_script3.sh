@@ -2,7 +2,7 @@
 # ============================================================
 # Script 3: Disk and Permission Auditor
 # Author: Rudra Ghosh | Reg No: 24BCG10070
-# Course: Open Source Software | OSS NGMC Project
+# Course: Open Source Software | OSS NGMC Capstone Project
 # Description: Loops through key system directories, reports
 #              their permissions, owner, group, and disk usage.
 #              Also checks Git's config directory specifically.
