@@ -2,7 +2,7 @@
 # ============================================================
 # Script 5: Open Source Manifesto Generator
 # Author: Rudra Ghosh | Reg No: 24BCG10070
-# Course: Open Source Software | OSS NGMC Project
+# Course: Open Source Software | OSS Capstone NGMC Project
 # Description: Interactively asks the user three questions
 #              and composes a personalised open-source
 #              philosophy statement, saved to a .txt file.
