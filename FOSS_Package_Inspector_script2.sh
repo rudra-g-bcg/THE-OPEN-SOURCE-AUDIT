@@ -2,7 +2,7 @@
 # ============================================================
 # Script 2: FOSS Package Inspector
 # Author: Rudra Ghosh | Reg No: 24BCG10070
-# Course: Open Source Software | OSS NGMC Project
+# Course: Open Source Software | OSS NGMC Capstone  Project
 # Description: Checks if a chosen open-source package is
 #              installed, shows its version/license, and
 #              prints a philosophy note using a case statement.
