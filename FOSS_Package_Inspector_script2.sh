@@ -2,7 +2,7 @@
 # ============================================================
 # Script 2: FOSS Package Inspector
 # Author: Rudra Ghosh | Reg No: 24BCG10070
-# Course: Open Source Software | OSS NGMC Capstone Project
+# Course: Open Source Software | OSS NGMC Project
 # Description: Checks if a chosen open-source package is
 #              installed, shows its version/license, and
 #              prints a philosophy note using a case statement.
@@ -60,7 +60,7 @@ else
     echo "  STATUS: $PACKAGE is NOT INSTALLED"
     echo ""
     echo "  To install $PACKAGE, run one of the following:"
-    echo "    RPM-based  : sudo dnf install $PACKAGE"
+    echo "    RPM-based    : sudo dnf install $PACKAGE"
     echo "    Debian-based : sudo apt install $PACKAGE"
 fi
 
