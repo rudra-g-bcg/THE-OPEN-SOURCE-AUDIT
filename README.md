@@ -23,17 +23,14 @@ The repository contains five shell scripts and a written project report covering
 ## Repository Structure
 
 ```
-oss-audit-[rollnumber]/
-│
+oss-audit-24BCG10070/
 ├── README.md                        
-│
 ├── scripts/
 │   ├── script1_system_identity.sh
 │   ├── script2_package_inspector.sh
 │   ├── script3_disk_permission_auditor.sh
 │   ├── script4_log_analyzer.sh
 │   └── script5_manifesto_generator.sh
-│
 └── OSS_Audit_Git_Report.pdf
 ```
 ---
